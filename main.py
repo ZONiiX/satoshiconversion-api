@@ -16,9 +16,11 @@ satoshiUSD = format(usd_rate*0.00000001, '.8f')
 eur_rate = float(eur_rate_dontuse.replace(',', ''))
 satoshiEUR = format(eur_rate*0.00000001, '.8f')
 
+
+
 @app.route('/', methods=['GET'])
 def test():
-    return jsonify({'USD PRICE': satoshiUSD})
+    return jsonify({'USD': satoshiUSD}, {'EUR': satoshiEUR})
 
 
 
