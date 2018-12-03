@@ -22,8 +22,5 @@ satoshiEUR = format(eur_rate*0.00000001, '.8f')
 def apiInformation():
     return jsonify({'USD': satoshiUSD}, {'EUR': satoshiEUR})
 
-
-    return
-
 if __name__ == "__main__":
     app.run()
